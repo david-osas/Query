@@ -2,6 +2,7 @@ package com.example.query.ui.main;
 
 import android.content.Context;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
@@ -17,7 +18,7 @@ import com.example.query.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_wiki, R.string.tab_text_geeks, R.string.tab_text_youtube, R.string.tab_text_stack, R.string.tab_text_quora, R.string.tab_text_reddit, R.string.tab_text_programiz};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_geeks, R.string.tab_text_stack, R.string.tab_text_youtube, R.string.tab_text_quora,R.string.tab_text_wiki, R.string.tab_text_reddit,R.string.tab_text_programiz};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -25,6 +26,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
+    @NonNull
     @Override
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.

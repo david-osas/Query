@@ -1,5 +1,8 @@
 package com.example.query.ui.main;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +10,6 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -26,6 +28,8 @@ public class PlaceholderFragment extends Fragment {
 
     private PageViewModel pageViewModel;
     WebView webView;
+    AlertDialog.Builder builder;
+    Dialog dialog;
 
     public static PlaceholderFragment newInstance(int index) {
         PlaceholderFragment fragment = new PlaceholderFragment();
@@ -44,6 +48,8 @@ public class PlaceholderFragment extends Fragment {
             index = getArguments().getInt(ARG_SECTION_NUMBER);
         }
         pageViewModel.setIndex(index);
+        builder = new AlertDialog.Builder(getActivity());
+        dialog = builder.setView(R.layout.progress).create();
     }
 
     @Override
@@ -54,7 +60,19 @@ public class PlaceholderFragment extends Fragment {
         webView = root.findViewById(R.id.webView);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
+        webView.setWebViewClient(new WebViewClient(){
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                dialog.show();
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                dialog.dismiss();
+            }
+        });
         pageViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
@@ -63,4 +81,5 @@ public class PlaceholderFragment extends Fragment {
         });
         return root;
     }
+
 }

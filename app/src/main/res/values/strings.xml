@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Query</string>
-    <string name="question">What\'s your query?</string>
+    <string name="title">Let\'s Query</string>
+    <string name="question">What\'s your search?</string>
     <string name="button">Search</string>
     <string name="title_activity_results">ResultsActivity</string>
     <string name="tab_text_wiki">Wikipedia</string>
@@ -10,4 +11,5 @@
     <string name="tab_text_quora">Quora</string>
     <string name="tab_text_reddit">Reddit</string>
     <string name="tab_text_programiz">Programiz</string>
+    <string name="loading">Loading…</string>
 </resources>
