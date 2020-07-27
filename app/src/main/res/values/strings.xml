@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Query</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="tab_text_wiki">Wikipedia</string>
+    <string name="tab_text_geeks">Geeksforgeeks</string>
+    <string name="tab_text_youtube">Youtube</string>
+    <string name="tab_text_stack">Stack Overflow</string>
+    <string name="tab_text_quora">Quora</string>
+    <string name="tab_text_reddit">Reddit</string>
+    <string name="tab_text_programiz">Programiz</string>
+</resources>
