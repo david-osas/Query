@@ -12,23 +12,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="93dp"
         android:layout_marginBottom="45dp"
-        android:text="Query"
+        android:text="@string/app_name"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/queryText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/queryText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:layout_marginBottom="50dp"
         android:ems="10"
-        android:hint="What's your query?"
+        android:hint="@string/question"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/searchButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,9 +45,9 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="163dp"
         android:onClick="startSearch"
-        android:text="Search"
+        android:text="@string/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/queryText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

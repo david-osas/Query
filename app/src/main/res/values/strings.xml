@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Query</string>
+    <string name="question">What\'s your query?</string>
+    <string name="button">Search</string>
     <string name="title_activity_results">ResultsActivity</string>
     <string name="tab_text_wiki">Wikipedia</string>
     <string name="tab_text_geeks">Geeksforgeeks</string>
