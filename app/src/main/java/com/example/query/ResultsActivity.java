@@ -1,6 +1,8 @@
 package com.example.query;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -22,5 +24,10 @@ public class ResultsActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
 
 
+    }
+
+    public void showHistory(View v){
+        Intent intent = new Intent(this, HistoryActivity.class);
+        startActivity(intent);
     }
 }

@@ -12,4 +12,5 @@
     <string name="tab_text_reddit">Reddit</string>
     <string name="tab_text_programiz">Programiz</string>
     <string name="loading">Loading…</string>
+    <string name="historyContent">history icon</string>
 </resources>
