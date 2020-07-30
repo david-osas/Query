@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.query.ui.main.SectionsPagerAdapter;
 
 public class ResultsActivity extends AppCompatActivity {
+    public static String queryText = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class ResultsActivity extends AppCompatActivity {
 
     }
 
-    public void showHistory(View v){
+    public void showHistory(View view){
         Intent intent = new Intent(this, HistoryActivity.class);
         startActivity(intent);
     }

@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
 
-import com.example.query.MainActivity;
+import com.example.query.ResultsActivity;
 
 public class PageViewModel extends ViewModel {
 
@@ -16,19 +16,19 @@ public class PageViewModel extends ViewModel {
         public String apply(Integer input) {
             switch (input){
                 case 1:
-                    return "https://www.geeksforgeeks.org/search/?q="+MainActivity.queryText;
+                    return "https://www.geeksforgeeks.org/search/?q="+ResultsActivity.queryText;
                 case 2:
-                    return "https://stackoverflow.com/search?q="+MainActivity.queryText;
+                    return "https://stackoverflow.com/search?q="+ResultsActivity.queryText;
                 case 3:
-                    return "https://www.youtube.com/results?q="+MainActivity.queryText;
+                    return "https://www.youtube.com/results?q="+ResultsActivity.queryText;
                 case 4:
-                    return "https://www.quora.com/search?q="+MainActivity.queryText;
+                    return "https://www.quora.com/search?q="+ResultsActivity.queryText;
                 case 5:
-                    return "https://en.wikipedia.org/wiki/Special:Search?search="+ MainActivity.queryText +"&go=Go&ns0=1";
+                    return "https://en.wikipedia.org/wiki/Special:Search?search="+ ResultsActivity.queryText +"&go=Go&ns0=1";
                 case 6:
-                    return "https://www.reddit.com/search/?q="+MainActivity.queryText+"&type=link";
+                    return "https://www.reddit.com/search/?q="+ResultsActivity.queryText+"&type=link";
                 case 7:
-                    return "https://www.programiz.com/search/"+MainActivity.queryText;
+                    return "https://www.programiz.com/search/"+ResultsActivity.queryText;
                 default:
                     return "";
             }

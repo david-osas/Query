@@ -73,7 +73,7 @@ public class PlaceholderFragment extends Fragment {
                 dialog.dismiss();
             }
         });
-        pageViewModel.getText().observe(this, new Observer<String>() {
+        pageViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                webView.loadUrl(s);
