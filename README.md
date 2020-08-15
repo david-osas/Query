@@ -24,7 +24,7 @@ Results from top programming related sites relating to the search phrase are sho
 
 ![youtube](images/youtube.jpg?raw=true)
 
-User can swipe through multiple tabs of websites shwoing results
+User can swipe through multiple tabs of websites showing results
 
 ![results](images/results.jpg?raw=true)
 
