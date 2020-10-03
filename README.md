@@ -10,9 +10,8 @@ Java, android studio, SQLite with the Room ORM
 
 Start the application and be taken to the home screen where you can start your search. The app is also built with usage in landscape view in mind.
 
-![home](images/home.jpg?raw=true) 
+![home](images/home.jpg?raw=true)   ![home in landscape view](images/land.jpg?raw=true)
 
-![home in landscape view](images/land.jpg?raw=true)
 
 The user waits for a while as results are being generated
 
@@ -20,9 +19,8 @@ The user waits for a while as results are being generated
 
 Results from top programming related sites relating to the search phrase are shown
 
-![geeks](images/geeks.jpg?raw=true)
+![geeks](images/geeks.jpg?raw=true)   ![youtube](images/youtube.jpg?raw=true)
 
-![youtube](images/youtube.jpg?raw=true)
 
 User can swipe through multiple tabs of websites showing results
 
